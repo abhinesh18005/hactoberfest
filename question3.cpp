@@ -4,74 +4,38 @@ using namespace std;
 
 typedef long long ll;
 
-int main()
-{
-	
-	int t;
-	cin>>t;
-	while(t--){
-		ll n;
-		double l;
-		cin>>n>>l;
-		double a[n+2];
-		a[0] = (double)0;
-		a[n+1] = l; 
-		for(int i=1;i<=n;i++){
-			cin>>a[i];
-		}
-		double left_s = 1;
-		double right_s = 1;
-		ll left = 1;
-		ll right = n;
-		double left_c = (double)0;
-		double right_c = l;
-		double left_t = (double)0;
-		double right_t = (double)0;
-		while(left<=right+1){
-			//cout<<left_t<<" start\n";
-			if(left==right+1){
-				//cout<<right_c<<" hhhhh "<<left_c<<"\n";
-				left_t+=(right_c-left_c)/(left_s+right_s);
-				left+=1.0;
-			}else{
-				double dis1 = a[left]-left_c;
-				double dis2 = right_c-a[right];
-				double t1 = dis1/left_s;
-				double t2 = dis2/right_s;
-				if(left_t+t1==right_t+t2){
-					right_t+=t2;
-					right_c = a[right];
-					right--;
-					right_s+=1.0;
-					left_t+=t1;
-					left_c = a[left];
-					left++;
-					left_s+=1.0;
-				}
-				else if(left_t+t1>right_t+t2){
-					right_t+=t2;
-					right_c = a[right];
-					right--;
-					right_s+=1.0;
-					left_t+=t2;
-					left_c+=t2*left_s;
+int main() {
 
-				}else{
-					left_t+=t1;
-					left_c = a[left];
-					left++;
-					left_s+=1.0;
-					right_t+=t1;
-					right_c-=t1*right_s;
+	ll t;
+	cin>>t;
+	while(t>0){
+		ll n,x;
+		cin>>n>>x;
+		ll arr[n];
+		int flag = 1;
+		for(ll i=0;i<n;i++){
+			cin>>arr[i];
+			if(arr[i]!=x){
+				flag=0;
+			}
+		}
+		if(flag==1){
+			cout<<"0\n";
+		}else{
+			ll ans = 0;
+			flag=0;
+			for(ll i=0;i<n;i++){
+				ans+=(x-arr[i]);
+				if(arr[i]==x){
+					flag=1;
 				}
 			}
-			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
+			if(ans==0 || flag==1){
+				cout<<"1\n";
+			}else{
+				cout<<"2\n";
+			}
 		}
-    master
-		cout<<fixed<<left_t<<"\n";
-		cout<<and<<endl;
-		cout<<left_t<<"\n"; master
-	
+	}
 	return 0;
 }	
-
