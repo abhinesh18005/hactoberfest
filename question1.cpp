@@ -4,8 +4,7 @@ using namespace std;
 
 typedef long long ll;
 
-int main()
-{
+int main() {
 	
 	int t;
 	cin>>t;
@@ -19,8 +18,8 @@ int main()
 		for(int i=1;i<=n;i++){
 			cin>>a[i];
 		}
-		double left_s = 1;
-		double right_s = 1;
+		double left_s = 1.0;
+		double right_s = 1.0;
 		ll left = 1;
 		ll right = n;
 		double left_c = (double)0;
@@ -67,11 +66,7 @@ int main()
 			}
 			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
 		}
-    master
-		cout<<fixed<<left_t<<"\n";
-		cout<<and<<endl;
-		cout<<left_t<<"\n"; master
-	
+		cout<<left_t<<"\n";
+	}
 	return 0;
 }	
-
