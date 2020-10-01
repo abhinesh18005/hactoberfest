@@ -67,6 +67,7 @@ int main() {
 			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
 		}
 		cout<<fixed<<left_t<<"\n";
+		cout<<and<<endl;
 	}
 	return 0;
 }	
