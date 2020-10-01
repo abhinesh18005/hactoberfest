@@ -18,8 +18,8 @@ int main() {
 		for(int i=1;i<=n;i++){
 			cin>>a[i];
 		}
-		ll left_s = 1;
-		ll right_s = 1;
+		double left_s = 1;
+		double right_s = 1;
 		ll left = 1;
 		ll right = n;
 		double left_c = (double)0;
