@@ -5,7 +5,7 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-	cout.precision(17);
+	
 	int t;
 	cin>>t;
 	while(t--){
@@ -66,7 +66,7 @@ int main() {
 			}
 			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
 		}
-		cout<<fixed<<left_t<<"\n";
+		cout<<left_t<<"\n";
 	}
 	return 0;
 }	
