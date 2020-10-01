@@ -65,7 +65,7 @@ int main() {
 			}
 			cout<<count<<"\n";
 		}
-		cout<<This is a cpp program<<endl;
+		cout<<This is a cpp programs<<endl;
 
 	}
 	return 0;
