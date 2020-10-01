@@ -10,6 +10,7 @@ int main() {
 	cin>>t;
 	while(t--){
 		ll n;
+		cout.precision(17);
 		double l;
 		cin>>n>>l;
 		double a[n+2];
@@ -66,7 +67,7 @@ int main() {
 			}
 			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
 		}
-		cout<<left_t<<"\n";
+		cout<<fixed<<left_t<<"\n";
 	}
 	return 0;
 }	
