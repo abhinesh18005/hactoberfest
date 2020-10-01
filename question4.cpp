@@ -14,4 +14,5 @@
             ans=min(ans,f[i]+i);
         }
     	cout<<ans;
+        cout<<and<<endl;
     }
