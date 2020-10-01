@@ -64,9 +64,10 @@ int main() {
 					right_c-=t1*right_s;
 				}
 			}
-			//cout<<left<<" "<<right<<" "<<left_t<<" end\n";
+			cout<<left<<" "<<right<<" "<<left_t<<" end\n";
 		}
 		cout<<left_t<<"\n";
 	}
+	
 	return 0;
 }	
